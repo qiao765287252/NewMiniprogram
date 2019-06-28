@@ -1,2 +1,5 @@
 <!--pages/home/home.wxml-->
-<text>pages/home/home.wxml</text>
+<!-- 知识点1 -->
+<view>当前计数：{{counter}}</view>
+<button size='mini' bindtap='addBtn'>+</button>
+<button size='mini' bindtap='retractBtn'>-</button>
