@@ -1,2 +1,4 @@
 <!--pages/home/home.wxml-->
 <text>pages/home/home.wxml</text>
+<view bindtap='handleViewClick'>哈哈哈</view>
+<view wx:for="{{list}}">{{item.title}}</view>
