@@ -1,0 +1,27 @@
+<!--pages/wxs/wxs.wxml-->
+<!-- <text>pages/wxs/wxs.wxml</text> -->
+<!-- 1，直接在wxml中进行定义 -->
+<!-- <wxs module="info">
+  var message = "hello world!";
+  var name = "coderWhy";
+  var sum = function(num1,num2) {
+    return num1 + num2;
+  }
+  //commonjs模块化导出写法
+  module.exports = {
+    message: message,
+    name: name,
+    sum: sum
+  }
+</wxs> -->
+<!-- 2，定义在单独的wxs文件中，再使用<wxs>表情进行导入 -->
+<wxs src="../../wxs/info.wxs" module="info"/>
+<view>{{info.message}}</view>
+<view>{{info.name}}</view>
+<view>{{info.sum(2,3)}}</view>
+
+<!-- 3，wxs的应用 -->
+<wxs src="../../wxs/format.wxs" module="format"/>
+<view>{{format.priceFormat(price)}}</view>
+<view>{{format.timeFormat(time,'yyyy-mm-dd hh:mm:ss')}}</view>
+
