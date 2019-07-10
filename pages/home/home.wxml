@@ -1,2 +1,8 @@
 <!--pages/home/home.wxml-->
-<text>pages/home/home.wxml</text>
+<view>{{title}}</view>
+<!-- 1，navigator页面跳转 -->
+<navigator url='/pages/detail/detail?age=18&name=why'>跳转到详情页</navigator>
+
+<!-- 2，navigator属性：open-type -->
+<navigator url='/pages/detail/detail'
+open-type='redirect'>跳转到详情页</navigator>
